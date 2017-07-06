@@ -3,7 +3,7 @@ import React from 'react'
 
 const Header = () => (
   <header>
-    <Logo />
+    { /* <Logo /> */ }
   </header>
 )
 
