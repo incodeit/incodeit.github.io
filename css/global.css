@@ -6,3 +6,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.container {
+  max-width: 42em;
+  margin: 200px auto 3rem auto;
+  font-size: 1.2rem;
+}
+
+.container a {
+  color: #fff;
+}

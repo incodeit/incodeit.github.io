@@ -6,15 +6,22 @@
 
 .header {
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
   position: absolute;
   text-align: center;
+  padding: 2rem;
 }
 
 .title {
   font-size: 4.5rem;
   font-weight: normal;
+}
+
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
 }
 
 .title strong {
@@ -31,4 +38,10 @@
   width: 100%;
   bottom: .45rem;
   position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  } 
 }

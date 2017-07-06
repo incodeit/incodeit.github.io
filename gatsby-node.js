@@ -4,15 +4,10 @@ exports.modifyWebpackConfig = function (config) {
   config.merge({
     postcss: [
       cssnext({
-        browsers: ['last 20 versions'],
+        browsers: ['last 10 versions'],
       }),
     ],
-  });
-
-  config.loader('svg', {
-    test: /\.(svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-    loader: 'file-loader',
-  });
+  })
 
   return config
 }

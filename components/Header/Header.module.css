@@ -1,0 +1,12 @@
+.mainHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .mainHeader {
+    padding: 2rem;
+  } 
+}
