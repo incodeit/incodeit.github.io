@@ -1,0 +1,8 @@
+body {
+  background: #1d1e3e;
+  color: #FFF;
+  font-size: 15px;
+  font-family:'Futura PT W01 Book', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

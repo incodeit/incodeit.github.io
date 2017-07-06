@@ -1,0 +1,20 @@
+.buttonLink {
+  display: inline-block;
+  padding: .9rem 1.8rem;
+  border-radius: 3rem;
+  font-size: 1rem;
+  background: rgb(245,86,72);
+  background: linear-gradient(45deg, rgba(245,86,72,1) 0%,rgba(208,40,104,1) 100%);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF;
+  font-family:'Futura PT W01 Demi', sans-serif;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 30px -5px rgba(0,0,0,.5);
+  transition: .3s ease box-shadow;
+  cursor: pointer;
+}
+
+.buttonLink:hover {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+}

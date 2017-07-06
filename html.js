@@ -33,6 +33,7 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/4b4a06e7-e909-48f5-a786-4c635cc4db0d.css"/>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
           {head.title.toComponent()}
           {head.meta.toComponent()}

@@ -1,6 +1,12 @@
 import React from 'react'
-import '../css/global.scss'
+import Header from '../components/Header'
+import '../css/global.css'
 
-const Template = props => <div>{ props.children }</div>
+const Template = props => (
+  <div>
+    <Header />
+    { props.children }
+  </div>
+)
 
 export default Template

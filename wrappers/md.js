@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import 'css/markdown-styles.scss'
+import 'css/markdown-styles.css'
 import Helmet from 'react-helmet'
 import { config } from 'config'
 
