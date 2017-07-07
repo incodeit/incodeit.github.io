@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 42em;
   margin: 200px auto 3rem auto;
