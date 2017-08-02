@@ -3,51 +3,47 @@
   flex-wrap: wrap;
 }
 
-.colLeft,
-.colRight {
+.container > span {
   width: 50%;
   padding: 3rem 6rem;
 }
 
-@media screen and (max-width: 1024px) {
-  .colLeft,
-  .colRight {
-    padding: 3rem;
-  }  
-}
-
-.colLeft,
-.colRight a {
+.container > span,
+.container > span a {
   color: rgba(255,255,255,0.7);
 }
 
-.colLeft {
+.container > span:first-child {
   text-align: left;
 }
 
-.colRight a:hover {
+.container > span:last-child a:hover {
   text-decoration: none;
 }
 
-.colRight {
+.container > span:last-child {
   text-align: right;
 }
 
 @media screen and (max-width: 768px) {
-  .colLeft,
-  .colRight {
+  .container > span:first-child,
+  .container > span:last-child {
     width: 100%;
     text-align: center;
     padding: 2rem;
   } 
-  .col {
-    padding: 2rem;
-  } 
+}
+
+@media screen and (max-width: 1024px) {
+  .container > span:first-child,
+  .container > span:last-child {
+    padding: 3rem;
+  }  
 }
 
 @media screen and (max-width: 480px) {
-  .colLeft,
-  .colRight {
+  .container > span:first-child,
+  .container > span:last-child {
     padding: 1rem;
   }
 }

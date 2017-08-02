@@ -39,8 +39,14 @@
   position: absolute;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .title {
     font-size: 3rem;
+  } 
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 2.5rem;
   } 
 }
