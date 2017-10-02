@@ -1,7 +1,7 @@
 import React from 'react'
-import style from './Hero.module.css'
+import style from './hero.module.scss'
 
-import ButtonLink from '../ButtonLink'
+import ButtonLink from './button-link.js'
 
 const Hero = () => (
   <section className={style.hero}>

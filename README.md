@@ -1,2 +1,2 @@
-# incode website
-Brand new incode website built on top of [Gatsby](https://github.com/gatsbyjs/gatsby).
+# gatsby-starter-hello-world
+Starter with the bare essentials needed for a Gatsby site

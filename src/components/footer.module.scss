@@ -31,14 +31,14 @@
     width: 100%;
     text-align: center;
     padding: 2rem;
-  } 
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .container > span:first-child,
   .container > span:last-child {
     padding: 3rem;
-  }  
+  }
 }
 
 @media screen and (max-width: 480px) {

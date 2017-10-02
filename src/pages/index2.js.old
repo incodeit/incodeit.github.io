@@ -1,0 +1,56 @@
+import React from "react"
+import g from "glamorous"
+
+import { rhythm } from "../utils/typography"
+
+export default ({ data }) =>
+  <div>
+    <h1>
+    {data.site.siteMetadata.title}
+    </h1>
+    <p>
+      We're the only site running on your computer dedicated to showing the best
+      photos and videos of pandas eating lots of food.
+    </p>
+    <h4>
+      {data.allMarkdownRemark.totalCount} Posts
+    </h4>
+    {data.allMarkdownRemark.edges.map(({ node }) =>
+        <div key={node.id}>
+          <g.H3 marginBottom={rhythm(1 / 4)}>
+            {node.frontmatter.title}{" "}
+            <g.Span color="#BBB">— {node.frontmatter.date}</g.Span>
+          </g.H3>
+          <p>
+            {node.excerpt}
+          </p>
+        </div>
+      )}
+  </div>
+
+
+export const query = graphql`
+  query IndexQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/posts/.*\\.md$/"}}
+      sort: { order: DESC, fields: [frontmatter___date]},
+    ){
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`
